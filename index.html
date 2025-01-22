@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Подключение внешних стилей -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Градиент фона от черного в верхней части до желтого в нижней */
+            background: linear-gradient(to bottom, #000, #B88D00);
+            color: #333;
+        }
+
+        /* Шапка и навигация */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0; /* Увеличиваем высоту шапки */
+            border-radius: 15px; /* Округление углов шапки */
+            margin: 10px; /* Отступы по краям */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Центрирование элементов по горизонтали */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; /* Размер шрифта */
+            padding: 10px 15px; /* Отступы вокруг текста */
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Фон при наведении */
+            border-radius: 5px; /* Округление углов при наведении */
+        }
+
+        /* Стили для главного контента */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main h1 {
+            color: #333;
+        }
+
+        main button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        main button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Стили для изображения аватара */
+        .avatar {
+            position: absolute;
+            top: 17px;
+            right: 17px;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .avatar:hover {
+            transform: scale(1.1);
+            box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Стили для видео */
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .video-wrapper {
+            flex: 1 1 22%; /* Ширина видео 22%, чтобы вместить 4 видео в строке */
+            background-color: #000;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка с навигацией -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About</a></li> <!-- Ссылка на About -->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Видео на главной странице -->
+    <section class="video-container">
+        <div class="video-wrapper">
+            <!-- Первое видео -->
+            <video id="video1" controls>
+                <source src="static/images/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Второе видео -->
+            <video id="video2" controls>
+                <source src="static/images/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Третье видео -->
+            <video id="video3" controls>
+                <source src="static/images/video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Четвертое видео -->
+            <video id="video4" controls>
+                <source src="static/images/video4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Вторая линия видео -->
+    <section class="video-container">
+        <div class="video-wrapper">
+            <!-- Пятое видео -->
+            <video id="video5" controls>
+                <source src="static/images/video5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Шестое видео -->
+            <video id="video6" controls>
+                <source src="static/images/video6.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Седьмое видео -->
+            <video id="video7" controls>
+                <source src="static/images/video7.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Восьмое видео -->
+            <video id="video8" controls>
+                <source src="static/images/video8.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Третья линия видео -->
+    <section class="video-container">
+        <div class="video-wrapper">
+            <!-- Девятое видео -->
+            <video id="video9" controls>
+                <source src="static/images/video9.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Десятое видео -->
+            <video id="video10" controls>
+                <source src="static/images/video10.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Одиннадцатое видео -->
+            <video id="video11" controls>
+                <source src="static/images/video11.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <!-- Двенадцатое видео -->
+            <video id="video12" controls>
+                <source src="static/images/video12.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Изображение аватара -->
+    <img src="static/images/banner.jpg" alt="User Avatar" class="avatar">
+
+    <!-- Подключение внешних скриптов -->
+    <script src="static/js/script.js" defer></script>
+</body>
+</html>

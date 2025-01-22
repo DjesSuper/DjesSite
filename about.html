@@ -1,0 +1,94 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Website</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000, #B88D00);
+            color: #333;
+        }
+
+        /* Шапка и навигация */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Контент страницы About */
+        .about-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .about-content img {
+            float: left;
+            margin-right: 20px;
+            width: 200px; /* Устанавливаем размер изображения */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .about-content h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка с навигацией -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Контент страницы About -->
+    <section class="about-content">
+        <img src="static/images/about-image.jpg" alt="About Image">
+        <h1>About Us</h1>
+        <p>Welcome to the About page! This is where you can learn more about our mission and values.</p>
+        <p>We aim to provide high-quality services and content. Our team is dedicated to making your experience the best possible. Stay tuned for more updates!</p>
+    </section>
+
+</body>
+</html>
